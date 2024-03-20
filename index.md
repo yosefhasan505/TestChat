@@ -1,6 +1,6 @@
 <HTML>
   <Body> 
-   <script type='text/javascript'>
+<script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -19,6 +19,7 @@
 	};
 </script>
 <script type='text/javascript' src='https://arat.my.site.com/ESWGetHub1710934458827/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 
  </Body>
  </HTML>
