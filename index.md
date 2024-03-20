@@ -4,7 +4,18 @@
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
-
+        
+        window.addEventListener("onEmbeddedMessagingReady", () => {
+            console.log("Received the onEmbeddedMessagingReady event…");
+            embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({ 
+            "PlatformUserEmail" : "" , 
+            "PlatformUserType" : "",
+            "PlatformUserID" : "45345345345" ,
+            "PlatformUserFirstName" : "Yosef",
+            "PlatformUserLastName" : "Hasan",
+            "PlatformUserLanguage" : "Arabic"}
+            );
+        });
 			embeddedservice_bootstrap.init(
 				'00D8d00000Az0S2',
 				'GetHub',
